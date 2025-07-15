@@ -1,0 +1,92 @@
+@import '../../styles.css';
+
+  @media (max-width: 768px) {
+    .about-picture {
+      width: 250px;
+    }
+  }
+  
+  .about-picture{
+    max-width: 820px;
+    margin: 0.5rem 0rem 2rem 0rem;
+  }
+ .timeline-container {
+  padding: 4rem 1rem;
+  background-color: #27333f; /* Matches other sections */
+  color: #e0f0ff;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0;
+  max-width: 800px;
+  border-left: 3px solid #00ff88;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  background-color: #00ff88;
+  border-radius: 50%;
+  border: 3px solid #27333f;
+  box-shadow: 0 0 0 2px #00ff88;
+}
+
+.timeline-content {
+  background-color: #1e2a35; /* Darker card background */
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #00ff88;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #adb5bd;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    border-left: 2px solid #00ff88;
+    padding-left: 1rem;
+  }
+
+  .timeline-dot {
+    left: -11px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-content {
+    padding: 1rem;
+  }
+}
+.start-marker {
+  margin-top: -1rem;
+}
+
+.end-marker {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,106 @@
+@import '../../styles.css';
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #00FF00; }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-title, .home-author {
+    font-size: 2.5rem !important;
+    text-align: center;
+  }
+
+  .home-author {
+    line-height: 3rem !important;
+  }
+
+  .text-left {
+    margin: 20px;
+  }
+}
+
+.text-left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  color: #e0f0ff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.text-left {
+  animation: slideInUp 1s ease-out;
+  max-width: 800px;
+}
+
+.home-title {
+  font-size: 4.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  line-height: 5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #00ffe7, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-author {
+  font-size: 2rem;
+  color: #00ff88;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+#dynamic-text {
+  border-right: 2px solid #00FF00;
+  padding-right: 5px;
+  animation: blink-caret 0.7s step-end infinite;
+  color: #00FF00;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #d0eaff;
+  margin-top: 1rem;
+  line-height: 1.8rem;
+}
+
+button {
+  margin-top: 2.5rem;
+  background-color: transparent;
+  border: 2px solid #00ff88;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00ff88;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.a-green {
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
