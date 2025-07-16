@@ -5,9 +5,6 @@ import {
   supportsScrollBehavior
 } from "./chunk-SEJ6VUQM.js";
 import {
-  coerceCssPixelValue
-} from "./chunk-SVVIGFXE.js";
-import {
   ArrayDataSource,
   BasePortalOutlet,
   CdkPortalOutlet,
@@ -19,6 +16,9 @@ import {
   _VIEW_REPEATER_STRATEGY,
   isDataSource
 } from "./chunk-FRNWQWI6.js";
+import {
+  coerceCssPixelValue
+} from "./chunk-SVVIGFXE.js";
 import {
   A11yModule,
   ESCAPE,

@@ -5,11 +5,11 @@ import {
 } from "./chunk-X632MW4Q.js";
 import "./chunk-SEJ6VUQM.js";
 import {
-  coerceBooleanProperty
-} from "./chunk-SVVIGFXE.js";
-import {
   _StructuralStylesLoader
 } from "./chunk-6NJ2RAJC.js";
+import {
+  coerceBooleanProperty
+} from "./chunk-SVVIGFXE.js";
 import {
   BACKSPACE,
   DELETE,
